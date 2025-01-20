@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "llmqt"
+version = "1.0.0"
+description = "Implementation of LLM-based copilot for quantitative trading."
+authors = ["Artem Kraevskiy <krayevskiy.a.a@gmail.com>", "Yana Ivanova <yana.v.ivanova@mail.ru>", "Mikhail Grigoryan <TBD>", "Alexander Didenko <TBD>"]
+license = "License"
+packages = [
+    {include = "llmqt"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.22.1"
+pandas = "^1.4.2"
+yfinance = "^0.2.46"
+omegaconf = "^2.3.0"
+blackscholes = "^0.2.0"
+hydra-core = "^1.3.2"
+tensorboard = "2.17.1"
+matplotlib = "^3.5.1"
+wandb = "^0.17.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+mkdocs = "^1.3.1"
+mknotebooks = "^0.8.0"
+markdown-include = "^0.7.0"
+python-markdown-math = "^0.8"
+mkdocs-material = "^8.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
